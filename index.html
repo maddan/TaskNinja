@@ -1,5 +1,5 @@
 <!doctype <html>
-<html lang="en" ng-app="TaskNinja">
+<html lang="en">
 <head>
 	<meta charset="UTF-8">
 	<title>TaskNinja App</title>
@@ -11,9 +11,11 @@
 	<link rel="stylesheet" type="text/css" href="styles/main.css">
 	
 </head>
-<body>
+<body ng-app="TaskNinja">
 	
-
+	<div class="jumbotron">
+		<div ng-view=""></div>
+	</div>
 
 
 
