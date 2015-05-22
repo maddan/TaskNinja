@@ -12,11 +12,7 @@
 						<input type="text" ng-model="searchTask" class="form-control" placeholder="Search">
 					</div>
 				</div>
- 				<div class="title">
- 					<a href="#post" class="btn btn-warning">Post a title</a>
- 				</div>
- 				<br>
-
+ 		
  				<!-- TASK LIST -->
  				<a ng-repeat="task in tasks | filter: searchTask | orderBy: 'title'" ng-href="#/edit/{{task.$id}}">
  					<div class="list-group-item">
